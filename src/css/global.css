@@ -1,0 +1,28 @@
+:root{--green:#0e9f5a;--green-dark:#067a43;--green-light:#e6f4ee;--gold:#f2b705;--blue:#2f6fed;--bg:#f3f6f5;--text:#1f2d2a;--muted:#6b7a76;--red:#d64545;--border:#dce5e2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h3{margin-bottom:12px}
+.btn{display:inline-block;background:var(--green);color:#fff;border:none;padding:12px 20px;border-radius:8px;font-size:15px;font-weight:600;text-align:center}
+.btn:hover{background:var(--green-dark)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.full{width:100%}
+.btn-small{padding:8px 14px;font-size:14px}
+.btn-outline{background:#fff;color:var(--green);border:1px solid var(--green)}
+.btn-outline:hover{background:var(--green-light)}
+.field{margin-bottom:16px}
+.field label{display:block;margin-bottom:6px;font-size:14px;font-weight:600}
+input,select{width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:8px;font-size:15px;background:#fff;font-family:inherit}
+input:focus,select:focus{outline:none;border-color:var(--green)}
+.has-error input{border-color:var(--red)}
+.error-text{color:var(--red);font-size:13px;margin-top:4px}
+.form-error{background:#fdeaea;color:var(--red);padding:10px 12px;border-radius:8px;margin-bottom:16px;font-size:14px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.toast{position:fixed;top:20px;right:20px;padding:14px 20px;border-radius:8px;color:#fff;z-index:300;box-shadow:0 4px 12px rgba(0,0,0,.2);max-width:calc(100% - 40px)}
+.toast.success{background:var(--green)}
+.toast.error{background:var(--red)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:200;padding:20px}
+.modal{background:#fff;border-radius:12px;padding:24px;width:100%;max-width:400px}
+.modal-body{margin-bottom:20px;line-height:1.5}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end}
